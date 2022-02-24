@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 새글 스킨 (latest) */
+
+.lat {position:relative;margin-bottom:20px;overflow:hidden;border: 1px solid #c6cacc;background:#fff}
+.lat .lat_title {display:block;padding:0 20px;line-height:45px;font-size:1.083em;border-bottom:1px solid #e2e2e2;color:#253dbe;background:#fcfcfc}
+.lat .lat_title a{color:#253dbe;display:inline-block;position:relative}
+.lat .lat_title a:after{position:absolute;bottom:-1px;left:0;width:100%;height:2px;background:#253dbe;content:''}
+.lat ul{padding:15px 20px}
+.lat li {position:relative;line-height:18px;padding:3px 0;padding-right:50px;padding-left:10px;position:relative}
+.lat li:before{position: absolute;top: 12px;left: 0px;width: 4px;height: 4px;background: #aaa;content: '';border-radius: 50%;}
+.lat li a:hover{color:#a22121}
+.lat li .fa-heart{color:#ff0000;}
+.lat li .fa-lock{display: inline-block;line-height: 14px;width: 16px;font-size: 0.833em;color: #4f818c;background: #cbe3e8;text-align: center;border-radius: 2px;font-size: 12px;border:1px solid #a2c6ce}
+.lat li .new_icon{display:inline-block;width: 16px;line-height:16px;font-size:0.833em;color:#ffff00;background:#6db142;text-align:center;border-radius: 2px;}
+.lat li .hot_icon{display:inline-block;width: 16px;line-height:16px ;font-size:0.833em;color:#fff;background:#e52955;text-align:center;border-radius: 2px;}
+.lat li .fa-caret-right{color:#bbb}
+.lat .lt_date{position:absolute;top:3px;right:0;color:#888}
+.lat  .empty_li{line-height:145px ;color:#666;text-align:center;padding:0;}
+.lat  .empty_li:before{background:none;padding:0}
+.lat .lt_cmt{background:#5c85c1;color:#fff; font-size:11px;height:16px;line-height:16px;padding:0 5px;border-radius:3px;
+-webkit-box-shadow: inset 0 2px 5px  rgba(255,255,255,0.4);
+-moz-box-shadow: inset 0 2px 5px  rgba(255,255,255,0.4);
+box-shadow: inset 0 2px 5px  rgba(255,255,255,0.4);}
+.lat .lt_more {position:absolute;top:11px;right:10px;display:block;width:25px;line-height:25px;color:#aaa;border-radius:3px;text-align:center;}
+.lat .lt_more:hover{color:#777}
+.basic_one { width: 100%; max-width: 1170px; margin: 0 auto; box-sizing: border-box; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+.basic_one::after { display: block; content: ""; clear: both; }
+.one { padding-top: 1.750rem; text-align: center; }
+.one ul { border-top: 2px solid #222; }
+.one ul li { border-bottom: 1px solid #cccccc; padding: 45px 0; text-align: left; }
+.one ul li::after { display: block; content: ""; clear: both; }
+.one ul li a { display: block; padding: 0 40px; text-decoration: none; color: #222222; }
+.one ul li a .basic_one_date { float: left; width: 12.5%; font-size: 1.5rem; font-weight: 700; color: #999999; }
+.one ul li a .basic_one_date > span { display: inline-block; text-align: center; }
+.one ul li a .basic_one_date .basic_one_day { line-height: normal; display: inline-block; font-size:4.5em; text-indent: -0.05em; }
+.one ul li a .basic_one_content { float: left; width: 81.25%; font-size: 1.125rem; }
+.one ul li a .basic_one_content .basic_one_title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 95%; height: 1.25em; display: inline-block; margin-bottom: 0.875em; font-size: 1.444em; box-sizing: border-box; font-weight: 300; }
+.one ul li a .basic_one_content .basic_one_p { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #666; }
+.one ul li:hover { background: #fbfbfc; }
+.one ul li:hover a .basic_one_date { color: #222; }
+.one ul li:hover a .basic_one_content .basic_one_title { color: #920783; border-bottom: 1px solid #920783; }
+.one .btn { margin: 2.500rem 0 0.563rem; }
+@media all and (max-width: 1441px) {                  
+	.one .basic_one { max-width: 1025px; }
+	.one ul li a .basic_one_content { width: 87.5%; }
+}
+@media screen and (max-width: 1024px) { /**/
+	.one ul li a .basic_one_content { width: 87.5%; }
+}
+@media screen and  (max-width: 768px) {
+	.one { font-size: 1rem; }
+	.one ul { border-top: 2px solid #222; }
+	.one ul li { padding: 1.538em 0 3.846em; position: relative; overflow: hidden; }
+	.one ul li a { padding: 0 0.769em; }
+	.one ul li a .basic_one_date { float: none; position: absolute; bottom: 1.538em; width: 100%; font-size: 1rem; font-weight: 500; }
+	.one ul li a .basic_one_date > span br { display: none; }
+	.one ul li a .basic_one_date .basic_one_day { display: inline; font-size: 1rem; }
+	.one ul li a .basic_one_content { float: none; width: 100%; }
+	.one ul li a .basic_one_content .basic_one_p { display: block; }
+}
